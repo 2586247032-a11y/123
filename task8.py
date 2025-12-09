@@ -43,7 +43,7 @@ plt.show()
 lr_model_original = LogisticRegression(random_state=42, max_iter=200)
 lr_model_original.fit(X_train, y_train)
 y_pred_original = lr_model_original.predict(X_test)
-
+# sgvs
 accuracy_original = accuracy_score(y_test, y_pred_original)
 precision_original = precision_score(y_test, y_pred_original, average='weighted')
 recall_original = recall_score(y_test, y_pred_original, average='weighted')
